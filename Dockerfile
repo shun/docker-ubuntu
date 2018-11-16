@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 MAINTAINER KUDO Shunsuke
 
-RUN apt update && apt upgrade -y && DEBIAN_FRONTEND=nointaraction apt install -y \
+RUN apt update && apt upgrade -y && DEBIAN_FRONTEND=noninteractive apt install -y \
     vim \
     wget \
     curl \
